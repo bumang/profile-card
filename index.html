@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Coded by Lynette Lopez">
 
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
 
   <title>Profile Card | Frontend Mentor</title>
 </head>
@@ -17,12 +17,12 @@
 <body>
   <div class="container">
     <div class="card">
-      <img src="img/bg-pattern-card.svg" alt="Pattern of teal circles" />
+      <div class="card__header"><img src="img/bg-pattern-card.svg" alt="Pattern of teal circles" /></div>
       <div class="card__body">
         <div class="card__picture"><img src="img/image-victor.jpg" alt="Man named Victor"></div>
         <div class="card__profile">
-          <div class="card__name">Victor Crest</div>
-          <div class="card__age">26</div>
+          <div class="card__identity"><span class="card__name">Victor Crest</span><span class="card__age">26</span>
+          </div>
           <div class="card__location">London</div>
         </div>
       </div>
@@ -40,10 +40,6 @@
           <div class="card__label">Photos</div>
         </div>
       </div>
-    </div>
-    <div class="footer">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/lynettelopez">Lynette Lopez</a>.
     </div>
   </div>
 </body>

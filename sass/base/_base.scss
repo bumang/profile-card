@@ -4,7 +4,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 /* Remove default margin and padding */
@@ -67,10 +67,19 @@ select {
 
 /* Specific to this project */
 body {
+  box-sizing: border-box;
   min-height: 100vh;
   background: url(../../img/bg-pattern-top.svg),
     url(../../img/bg-pattern-bottom.svg), $primary;
   background-position: bottom calc(55vh - 10vw) right calc(48vw + 10%),
     top calc(72vh - 10vw) left calc(45vw + 10%);
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

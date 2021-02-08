@@ -1,0 +1,76 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0; }
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none; }
+
+/* Set core root defaults */
+html {
+  font-size: 16px; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block; }
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+
+/* Specific to this project */
+body {
+  min-height: 100vh;
+  background: url(../../img/bg-pattern-top.svg), url(../../img/bg-pattern-bottom.svg), #19a2ae;
+  background-position: bottom calc(55vh - 10vw) right calc(48vw + 10%), top calc(72vh - 10vw) left calc(45vw + 10%);
+  background-repeat: no-repeat; }
+
+.card {
+  width: 21.875em;
+  height: 23.375em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 0.9375em;
+  background-color: #fff;
+  box-shadow: 0px 3.125em 6.25em -1.25em rgba(8, 70, 94, 0.505); }

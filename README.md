@@ -12,4 +12,4 @@ There were no specific requirements.
 
 ![Design preview for the Profile Card Component challenge](./img/preview.jpg)
 
-Challenge by [Frontend Mentor](https://www.frontendmentor.io). Code by Lynette Lopez.
+Challenge by [Frontend Mentor](https://www.frontendmentor.io). Coded by Lynette Lopez.
